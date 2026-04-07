@@ -77,7 +77,7 @@ RUN printf '%s\n' '#!/usr/bin/env bash' 'exec node /openclaw/dist/entry.js "$@"'
   && chmod +x /usr/local/bin/openclaw
 
 COPY src ./src
-RUN openclaw skills install self-improving-agent
+RUN git clone https://github.com/peterskoett/self-improving-agent.git ~/.openclaw/skills/self-improving-agent
 # Updated skills installation command
 # Updated skills installation command
 

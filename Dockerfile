@@ -78,7 +78,7 @@ RUN printf '%s\n' '#!/usr/bin/env bash' 'exec node /openclaw/dist/entry.js "$@"'
 
 COPY src ./src
 RUN openclaw skill install self-improving-agent
-# Updated skill installation command
+# Updated skills installation command
 
 # The wrapper listens on $PORT.
 # IMPORTANT: Do not set a default PORT here.
